@@ -1,7 +1,7 @@
 {
   "name": "jsfarrell.com",
   "version": "0.1.0",
-  "homepage": "https://johnsfarrell.github.io/portfoliov2",
+  "homepage": "https://johnsfarrell.github.io/pf",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.4.9",
