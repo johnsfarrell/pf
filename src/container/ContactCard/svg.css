@@ -1,0 +1,43 @@
+.wave1 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave1 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 50px;
+}
+
+.wave1 .shape-fill {
+  fill: #ffffff;
+}
+
+.wave2 {
+  top: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(0deg);
+}
+
+.wave2 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 50px;
+}
+
+.wave2 .shape-fill {
+  fill: #000000;
+}
+
+#hidden {
+  visibility: hidden;
+}

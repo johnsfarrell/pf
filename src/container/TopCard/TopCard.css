@@ -1,0 +1,67 @@
+.container {
+  z-index: 0;
+  height: 100vh;
+  cursor: grab;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0));
+}
+.cover {
+  z-index: 9999;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0, 0),
+    rgb(0, 0, 0, 0),
+    rgb(0, 0, 0, 0),
+    rgb(0, 0, 0)
+  );
+  pointer-events: none;
+}
+.container:active {
+  cursor: grabbing;
+}
+.text {
+  z-index: 1000;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: "Inconsolata";
+  font-weight: bold;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.subtext {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+.scrolltext {
+  background-color: rgba(240, 248, 255, 0.69);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, 0%);
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  font-family: "Inconsolata";
+  animation: moveUp 1s ease-in-out;
+  animation-delay: 0.5s;
+}
+h1 {
+  margin: 0;
+}
+.contacts {
+  background-color: rgba(240, 248, 255, 0.6);
+  width: fit-content;
+  padding: 5px 25px 5px 25px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  color: rgb(10, 0, 99);
+}
