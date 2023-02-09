@@ -30,7 +30,7 @@ export default function ProjectCard({
   demo,
 }: ProjectCardI) {
   return (
-    <Card maxW="md" bgColor={"#121212"} color={"#ffffff"}>
+    <Card maxW="md" bgColor={"#191919"} color={"#ffffff"}>
       <CardHeader>
         <Flex w={"100%"} justifyContent={"center"}>
           <Heading as="h3" fontSize={"2xl"} textAlign={"center"}>
