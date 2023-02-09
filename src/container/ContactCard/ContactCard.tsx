@@ -4,6 +4,7 @@ import {
   CardFooter,
   CardHeader,
   Flex,
+  GridItem,
   Heading,
   SimpleGrid,
   Text,
@@ -75,20 +76,24 @@ export default function ContactCard() {
                 LinkedIn
               </Button>
             </a>
-            <a
-              href={"https://github.com/johnsfarrell"}
-              target={"_blank"}
-              rel="noopener noreferrer"
-            >
-              <Button
-                flex="1"
-                variant="ghost"
-                leftIcon={<FaGithub />}
-                _hover={{ backgroundColor: "#454545" }}
+            <GridItem colSpan={{ base: 2, sm: 1 }}>
+              <a
+                href={"https://github.com/johnsfarrell"}
+                target={"_blank"}
+                rel="noopener noreferrer"
+                style={{ width: "100%" }}
               >
-                GitHub
-              </Button>
-            </a>
+                <Button
+                  w={"100%"}
+                  flex="1"
+                  variant="ghost"
+                  leftIcon={<FaGithub />}
+                  _hover={{ backgroundColor: "#454545" }}
+                >
+                  GitHub
+                </Button>
+              </a>
+            </GridItem>
           </SimpleGrid>
         </CardFooter>
       </Card>

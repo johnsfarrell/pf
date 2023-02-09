@@ -61,7 +61,7 @@ export default function ProjectCard({
         }}
       >
         {demo ? (
-          <a href={demo}>
+          <a href={demo} target={"_blank"} rel="noopener noreferrer">
             <Button
               flex="1"
               variant="ghost"
@@ -73,7 +73,7 @@ export default function ProjectCard({
             </Button>
           </a>
         ) : (
-          <a href={demo}>
+          <a href={"a"}>
             <Button
               flex="1"
               variant="ghost"
@@ -87,7 +87,7 @@ export default function ProjectCard({
           </a>
         )}
         {github && (
-          <a href={github}>
+          <a href={github} target={"_blank"} rel="noopener noreferrer">
             <Button
               flex="1"
               variant="ghost"

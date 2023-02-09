@@ -181,6 +181,7 @@ export default function TopCard() {
             bgColor={"rgba(0,0,0,0.75)"}
             rounded={"md"}
             width={{ base: "90%", sm: "70vw", md: "60vw", lg: "35vw" }}
+            marginTop={{ base: "16", sm: undefined }}
           >
             <Avatar
               src={process.env.PUBLIC_URL + "/profile.jpeg"}
@@ -201,7 +202,12 @@ export default function TopCard() {
           </Box>
         </Heading>
       </Box>
-      <Box className="cover" w={"100vw"} h={"100vh"}></Box>
+      <Box
+        className={"cover"}
+        pointerEvents={{ base: "auto", md: "none" }}
+        w={"100vw"}
+        h={"100vh"}
+      ></Box>
       <Box className="container" ref={myDiv} w={"100vw"} h={"100vh"}></Box>
     </Box>
   );
