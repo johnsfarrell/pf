@@ -45,7 +45,7 @@ export default function MiddleCard() {
       image: process.env.PUBLIC_URL + "/ghoststory.png",
     },
     {
-      title: "Stock Analysis 📈",
+      title: "Stock Analysis 📊",
       description:
         "Project to get comfortable with Python, MongoDB, and web scraping. Analyzed and applied algorithms in Python to calculate a fundamental analysis of a stock. Queried data from web scrapers, APIs, and MongoDB. Hosted cloud applications from backend to frontend.",
       badges: [
@@ -59,7 +59,7 @@ export default function MiddleCard() {
       image: process.env.PUBLIC_URL + "/analysisproject.png",
     },
     {
-      title: "Graphing Calculator 📊",
+      title: "Graphing Calculator ✏️",
       description:
         "Final project for AP Calculus BC: a web-version of a graphing calculator similar to a TI-84. Implementation of Nerdamer framework, and Patrick Stein's Simple Graph. Designed a UI similar to a TI-84, including graphing, matrices, lists, state plots, and more.",
       badges: [

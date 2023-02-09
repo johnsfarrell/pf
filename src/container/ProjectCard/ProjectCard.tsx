@@ -60,7 +60,7 @@ export default function ProjectCard({
           },
         }}
       >
-        {demo && (
+        {demo ? (
           <a href={demo}>
             <Button
               flex="1"
@@ -70,6 +70,19 @@ export default function ProjectCard({
               mx={1}
             >
               Demo
+            </Button>
+          </a>
+        ) : (
+          <a href={demo}>
+            <Button
+              flex="1"
+              variant="ghost"
+              leftIcon={<FaSignOutAlt />}
+              _hover={{ backgroundColor: "#454545" }}
+              mx={1}
+              display={"none"}
+            >
+              Skeleton
             </Button>
           </a>
         )}
