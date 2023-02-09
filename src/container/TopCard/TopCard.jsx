@@ -1,10 +1,35 @@
 import { Avatar, Box, Heading, Link, Text } from "@chakra-ui/react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import "./TopCard.css";
 import "./ascii-renderer.js";
 import AsciiRenderer from "./ascii-renderer.js";
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+}
 
 export default function TopCard() {
   const myDiv = useRef(null);
@@ -182,6 +207,7 @@ export default function TopCard() {
             rounded={"md"}
             width={{ base: "90%", sm: "70vw", md: "60vw", lg: "35vw" }}
             marginTop={{ base: "16", sm: undefined }}
+            display={useWindowDimensions().height > 535 ? undefined : "none"}
           >
             <Avatar
               src={process.env.PUBLIC_URL + "/profile.jpeg"}
