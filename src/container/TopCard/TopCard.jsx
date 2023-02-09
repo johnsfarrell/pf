@@ -45,7 +45,7 @@ export default function TopCard() {
     var sphere;
 
     var texture =
-      "https://static.vecteezy.com/system/resources/previews/007/852/355/non_2x/dynamic-gradient-wavy-fluid-seamless-backdrop-modern-abstract-liquid-repeating-background-holographic-color-mix-tileable-texture-vector.jpg";
+      "https://assets.entrepreneur.com/content/3x2/2000/20180703190744-rollsafe-meme.jpeg";
     var useOrthoCam = false;
 
     var start = Date.now();
@@ -90,7 +90,7 @@ export default function TopCard() {
 
       asciiRenderer = new AsciiRenderer(renderer, {
         charSet: charSet,
-        fontSize: 18,
+        fontSize: 4,
         opacity: 0.2,
       });
 
@@ -124,7 +124,7 @@ export default function TopCard() {
         reflectivity: 0,
       });
 
-      const geometry = new THREE.TorusKnotBufferGeometry(100, 25, 100);
+      const geometry = new THREE.BoxBufferGeometry(100, 25, 100);
 
       sphere = new THREE.Mesh(geometry, sphereMat);
       scene.add(sphere);
