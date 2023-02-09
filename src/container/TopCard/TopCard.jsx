@@ -90,7 +90,7 @@ export default function TopCard() {
 
       asciiRenderer = new AsciiRenderer(renderer, {
         charSet: charSet,
-        fontSize: 16,
+        fontSize: 20,
         opacity: 0.2,
       });
 
