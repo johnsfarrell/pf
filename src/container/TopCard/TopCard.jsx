@@ -180,7 +180,7 @@ export default function TopCard() {
             p={"4"}
             bgColor={"rgba(0,0,0,0.75)"}
             rounded={"md"}
-            width={{ base: "90%", sm: "60vw", md: "50vw", lg: "40vw" }}
+            width={{ base: "90%", sm: "70vw", md: "60vw", lg: "35vw" }}
           >
             <Avatar
               src={process.env.PUBLIC_URL + "/profile.jpeg"}
@@ -191,13 +191,12 @@ export default function TopCard() {
               m={0}
               mr={5}
             />{" "}
-            <Text textAlign={{ base: "initial", md: "justify" }}>
-              I'm a freshman at Brown University studying Computer Science and
-              Applied Math. I'm interested in machine learning, computer vision,
-              and software engineering. I'm currently working as a software
-              engineering intern at Google. In my free time, I enjoy playing
-              guitar, reading, and playing video games. I'm also a huge fan of
-              the New England Patriots and Boston Celtics.
+            <Text>
+              I am a computer science student pursuing an ScB at Brown
+              University. Strong proficiencies in both object-oriented and
+              functional programming. Experience with independent and scaled web
+              applications using frameworks, DBMS, and other
+              systems/applications.
             </Text>
           </Box>
         </Heading>
