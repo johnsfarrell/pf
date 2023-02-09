@@ -7,64 +7,71 @@ export default function MiddleCard() {
     {
       title: "Collegy 🦉",
       description:
-        "Collegy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Designed an algorithm around College Scorecard API and user input, outputs recommended universities. Developed backend RESTful API with Express and site authorization with Google Oauth 2.0 and Redux. Implemented UI/UX design from Figma; included SVG manipulation, animation, and background patterning.",
       badges: [
         { name: "React", color: "blue" },
         { name: "Node", color: "green" },
+        { name: "Python", color: "yellow" },
+        { name: "TypeScript", color: "teal" },
+        { name: "MongoDB", color: "green" },
+        { name: "Express", color: "green" },
+        { name: "Redux", color: "red" },
+        { name: "Figma", color: "purple" },
+        { name: "Oauth 2.0", color: "green" },
+        { name: "ChakraUI", color: "blue" },
+        { name: "Heroku", color: "blue" },
       ],
       demo: "https://collegy.org/",
-      github: "https://collegy.github.com/",
+      github: "https://github.com/Collegy/client",
       image:
         "https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/image-search-1600-x-840-px-62c6dc4ff1eee-sej.png",
     },
     {
-      title: "Collegy 🦉",
+      title: "Ghost Stories 👻",
       description:
-        "Collegy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "24 hour project for Hack@Brown 2023 - UI/UX focused story generator - (MERN). Designed 3D models and animations to be rendered in React using Spline. Converted user form data to a formatted prompt to be used with OpenAI's API. Managed story listings and view counts with MongoDB and Express endpoints.",
       badges: [
         { name: "React", color: "blue" },
         { name: "Node", color: "green" },
+        { name: "TypeScript", color: "teal" },
+        { name: "MongoDB", color: "green" },
+        { name: "Express", color: "green" },
+        { name: "OPENAI API", color: "teal" },
+        { name: "ChakraUI", color: "blue" },
+        { name: "Heroku", color: "blue" },
+        { name: "Spline", color: "pink" },
       ],
-      demo: "https://collegy.org/",
-      github: "https://collegy.github.com/",
+      demo: "https://johnsfarrell.github.io/hb-client/",
+      github: "https://github.com/johnsfarrell/hb-client/",
       image:
         "https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/image-search-1600-x-840-px-62c6dc4ff1eee-sej.png",
     },
     {
-      title: "Collegy 🦉",
+      title: "Stock Analysis 📈",
       description:
-        "Collegy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Project to get comfortable with Python, MongoDB, and web scraping. Analyzed and applied algorithms in Python to calculate a fundamental analysis of a stock. Queried data from web scrapers, APIs, and MongoDB. Hosted cloud applications from backend to frontend.",
       badges: [
-        { name: "React", color: "blue" },
-        { name: "Node", color: "green" },
+        { name: "DiscordJS", color: "teal" },
+        { name: "Python", color: "yellow" },
+        { name: "Web Scraping", color: "red" },
+        { name: "Heroku", color: "teal" },
+        { name: "MongoDB", color: "green" },
       ],
-      demo: "https://collegy.org/",
-      github: "https://collegy.github.com/",
+      github: "https://github.com/johnsfarrell/analysis-proj/",
       image:
         "https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/image-search-1600-x-840-px-62c6dc4ff1eee-sej.png",
     },
     {
-      title: "Collegy 🦉",
+      title: "Graphing Calculator 📊",
       description:
-        "Collegy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Final project for AP Calculus BC: a web-version of a graphing calculator similar to a TI-84. Implementation of Nerdamer framework, and Patrick Stein's Simple Graph. Designed a UI similar to a TI-84, including graphing, matrices, lists, state plots, and more.",
       badges: [
-        { name: "React", color: "blue" },
-        { name: "Node", color: "green" },
+        { name: "HTML", color: "blue" },
+        { name: "CSS", color: "yellow" },
+        { name: "JavaScript", color: "green" },
+        { name: "Nerdamer", color: "teal" },
+        { name: "Simple Graph", color: "teal" },
       ],
-      demo: "https://collegy.org/",
-      github: "https://collegy.github.com/",
-      image:
-        "https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/image-search-1600-x-840-px-62c6dc4ff1eee-sej.png",
-    },
-    {
-      title: "Collegy 🦉",
-      description:
-        "Collegy lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      badges: [
-        { name: "React", color: "blue" },
-        { name: "Node", color: "green" },
-      ],
-      demo: "https://collegy.org/",
       github: "https://collegy.github.com/",
       image:
         "https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/image-search-1600-x-840-px-62c6dc4ff1eee-sej.png",
@@ -98,7 +105,7 @@ export default function MiddleCard() {
             {projects.map(
               ({ title, description, badges, demo, github, image }, key) => {
                 return (
-                  <BounceBox key={key} noOfLines={key % 2 !== 0 ? 0.1 : 0}>
+                  <BounceBox key={key} noOfLines={key % 2 !== 0 ? 0.2 : 0}>
                     <ProjectCard
                       title={title}
                       description={description}

@@ -40,10 +40,10 @@ export default function ProjectCard({
       </CardHeader>
       <CardBody pt={0}>
         <Text mb={4}>{description}</Text>
-        <Flex>
+        <Flex flexWrap={"wrap"}>
           {badges.map((badge, key) => {
             return (
-              <Badge key={key} mr={1} colorScheme={badge.color}>
+              <Badge key={key} mt={1} mr={1} colorScheme={badge.color}>
                 {badge.name}
               </Badge>
             );

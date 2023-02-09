@@ -8,12 +8,12 @@ export const BounceBox = ({ children, ...props }: BoxProps) => {
     <MotionBox
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: false, amount: 0 }}
       transition={{
         type: "spring",
         bounce: 0.6,
         duration: 0.75,
-        delay: props.noOfLines || 0,
+        delay: props.noOfLines || 0.15,
       }}
       {...props}
     >
