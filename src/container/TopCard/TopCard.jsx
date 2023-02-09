@@ -234,7 +234,22 @@ export default function TopCard() {
         w={"100vw"}
         h={"50vh"}
       ></Box>
-      <Box className="container" ref={myDiv} w={"100vw"} h={"100vh"}></Box>
+      <Box
+        className="container"
+        ref={myDiv}
+        w={"100vw"}
+        h={"100vh"}
+        display={{ base: "none", sm: "block" }}
+      ></Box>
+      <Box
+        bgImage={
+          "https://1.bp.blogspot.com/-XGAcrcZj-b8/XytyPVdxN_I/AAAAAAAAZXI/1Cd1oxy_ONY8LDRB9C2aa8NZY-Yudq28wCLcBGAsYHQ/d/GRADIENT-WALLPAPER-4k.png"
+        }
+        bgSize={"cover"}
+        w={"100vw"}
+        h={"100vh"}
+        display={{ base: undefined, sm: "none" }}
+      ></Box>
     </Box>
   );
 }
