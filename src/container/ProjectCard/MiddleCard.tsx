@@ -23,8 +23,7 @@ export default function MiddleCard() {
       ],
       demo: "https://collegy.org/",
       github: "https://github.com/Collegy/client",
-      image:
-        "https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/image-search-1600-x-840-px-62c6dc4ff1eee-sej.png",
+      image: process.env.PUBLIC_URL + "/collegy.png",
     },
     {
       title: "Ghost Stories 👻",
@@ -43,8 +42,7 @@ export default function MiddleCard() {
       ],
       demo: "https://johnsfarrell.github.io/hb-client/",
       github: "https://github.com/johnsfarrell/hb-client/",
-      image:
-        "https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/image-search-1600-x-840-px-62c6dc4ff1eee-sej.png",
+      image: process.env.PUBLIC_URL + "/ghoststory.png",
     },
     {
       title: "Stock Analysis 📈",
@@ -58,8 +56,7 @@ export default function MiddleCard() {
         { name: "MongoDB", color: "green" },
       ],
       github: "https://github.com/johnsfarrell/analysis-proj/",
-      image:
-        "https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/image-search-1600-x-840-px-62c6dc4ff1eee-sej.png",
+      image: process.env.PUBLIC_URL + "/analysisproject.png",
     },
     {
       title: "Graphing Calculator 📊",
@@ -72,9 +69,9 @@ export default function MiddleCard() {
         { name: "Nerdamer", color: "teal" },
         { name: "Simple Graph", color: "teal" },
       ],
-      github: "https://collegy.github.com/",
-      image:
-        "https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/image-search-1600-x-840-px-62c6dc4ff1eee-sej.png",
+      demo: "https://calcproject.com/",
+      github: "https://github.com/johnsfarrell/calcproject/",
+      image: process.env.PUBLIC_URL + "/calcproject.png",
     },
   ];
 

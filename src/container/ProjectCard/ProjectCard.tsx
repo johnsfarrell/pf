@@ -50,8 +50,7 @@ export default function ProjectCard({
           })}
         </Flex>
       </CardBody>
-      <Image objectFit="cover" src={image} alt={title + " demo"} h={160} />
-
+      <Image objectFit="cover" src={image} alt={title + " demo"} h={200} />
       <CardFooter
         justify="space-between"
         flexWrap="wrap"
