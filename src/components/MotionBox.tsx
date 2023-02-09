@@ -6,9 +6,12 @@ export const MotionBox = motion(Box);
 export const BounceBox = ({ children, ...props }: BoxProps) => {
   return (
     <MotionBox
-      initial={{ opacity: 0, y: 50 }}
+      initial={{
+        opacity: window.innerWidth < 600 ? 1 : 0,
+        y: window.innerWidth < 600 ? 0 : 50,
+      }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0 }}
+      viewport={{ once: window.innerWidth < 500, amount: 0 }}
       transition={{
         type: "spring",
         bounce: 0.6,
