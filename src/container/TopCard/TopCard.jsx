@@ -206,7 +206,7 @@ export default function TopCard() {
         className={"cover"}
         pointerEvents={{ base: "auto", md: "none" }}
         w={"100vw"}
-        h={"100vh"}
+        h={"50vh"}
       ></Box>
       <Box className="container" ref={myDiv} w={"100vw"} h={"100vh"}></Box>
     </Box>

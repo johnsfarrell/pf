@@ -6,6 +6,7 @@
 }
 .cover {
   z-index: 9999;
+  top: 50vh;
   position: absolute;
   background: linear-gradient(
     to bottom,
