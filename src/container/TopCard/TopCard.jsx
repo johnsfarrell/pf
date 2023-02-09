@@ -44,8 +44,7 @@ export default function TopCard() {
 
     var sphere;
 
-    var texture =
-      "https://assets.entrepreneur.com/content/3x2/2000/20180703190744-rollsafe-meme.jpeg";
+    var texture = "https://pbs.twimg.com/media/FD6v3jRXwAgfRtt.jpg";
     var useOrthoCam = false;
 
     var start = Date.now();
@@ -90,7 +89,7 @@ export default function TopCard() {
 
       asciiRenderer = new AsciiRenderer(renderer, {
         charSet: charSet,
-        fontSize: 4,
+        fontSize: 6,
         opacity: 0.2,
       });
 
@@ -106,7 +105,7 @@ export default function TopCard() {
       } else {
         camera = new THREE.PerspectiveCamera(25, width / height, 1, 1000);
       }
-      camera.position.z = 250;
+      camera.position.z = 500;
 
       scene = new THREE.Scene();
 
@@ -124,7 +123,7 @@ export default function TopCard() {
         reflectivity: 0,
       });
 
-      const geometry = new THREE.BoxBufferGeometry(100, 25, 100);
+      const geometry = new THREE.BoxBufferGeometry(100, 100, 100);
 
       sphere = new THREE.Mesh(geometry, sphereMat);
       scene.add(sphere);
