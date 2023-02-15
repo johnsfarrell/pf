@@ -78,13 +78,13 @@ export default function MiddleCard() {
   return (
     <Box
       w={"100vw"}
-      bgColor={"rgb(0, 0, 0)"}
+      bgColor={"rgb(250, 250, 250)"}
       bgImage={process.env.PUBLIC_URL + "/pattern.svg"}
       bgSize={"auto"}
     >
       <Box
         bgGradient={
-          "radial-gradient(circle, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.95) 50%, rgba(0,0,0,1) 70%)"
+          "radial-gradient(circle, rgba(35,35,35,0.95) 0%, rgba(35,35,35,0.95) 50%, rgba(35,35,35,1) 70%)"
         }
       >
         <Container maxW={"container.lg"} pb={"20"}>
