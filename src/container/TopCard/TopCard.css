@@ -12,11 +12,7 @@
     to bottom,
     rgb(0, 0, 0, 0),
     rgb(0, 0, 0, 0),
-    rgb(0, 0, 0, 0),
-    rgb(0, 0, 0, 0),
-    rgb(0, 0, 0, 0),
-    rgb(0, 0, 0, 0),
-    rgb(35, 35, 35)
+    rgb(0, 0, 0, 1)
   );
 }
 .container:active {
